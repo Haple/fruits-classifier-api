@@ -1,0 +1,4 @@
+Flask
+gunicorn
+fastai
+flask_cors
