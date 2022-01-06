@@ -22,3 +22,9 @@
 ## Run app
 
 `python app.py`
+
+## Using the endpoint
+
+curl \
+  -F "image=@/home/aleph/Downloads/orange1.jpeg" \
+  http://localhost:8000/predict
