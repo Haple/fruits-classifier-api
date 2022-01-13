@@ -6,8 +6,7 @@ import os
 app = Flask(__name__)
 CORS(app, support_credentials=True)
 
-path = Path()
-learn = load_learner(path/'my-first-fruits-classifier.pkl')
+learn = load_learner(Path()/'my-first-fruits-classifier.pkl')
 classes = learn.dls.vocab
 
 def predict(img_file):
@@ -32,7 +31,4 @@ def predict_json():
     return jsonify(predict(img_file))
 
 if __name__ == "__main__":
-    print(("Loading model..."))
-    load_model()
-    print(("Model loaded! Starting the app..."))
     app.run(debug=True)
