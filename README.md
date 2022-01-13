@@ -22,6 +22,8 @@
 ## Run app
 
 `python app.py`
+or
+`gunicorn app:app`
 
 ## Using the endpoint
 
